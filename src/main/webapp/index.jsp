@@ -10,7 +10,12 @@
   <head>
     <title>$Title$</title>
   </head>
+
   <body>
-  $END$
+  <form action="/toan" method="post">
+    <input name="ten" placeholder="nhập name">
+    <input name="tuoi" placeholder="nhập age">
+    <button type="submit">submit</button>
+  </form>
   </body>
 </html>

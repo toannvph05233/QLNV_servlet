@@ -12,18 +12,18 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/views/createNhanVien.jsp">create</a>
+<a href="/nhanvien?action=create">create</a>
 <table>
-    <c:forEach items="${listNV}" var="nv">
+    <c:forEach items="${listNV}" var="nv" varStatus="loop">
     <tr>
         <td>${nv.id}</td>
         <td>${nv.name}</td>
         <td>${nv.birthday}</td>
         <td>${nv.email}</td>
         <td>${nv.address}</td>
-        <td>${nv.idPB}</td>
-        <td><button >edit</button></td>
-        <td><button >delete</button></td>
+        <td><c:if test="${nv.idPB==1}">Bảo vệ</c:if> <c:if test="${nv.idPB==2}">Vệ sinh</c:if></td>
+        <td><a href="/nhanvien?action=edit&index=${loop.index}">edit</a></td>
+        <td><a href="/nhanvien?action=delete&id=${nv.id}" >delete</a></td>
     </tr>
     </c:forEach>
 </table>

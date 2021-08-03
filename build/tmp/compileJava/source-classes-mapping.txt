@@ -1,12 +1,18 @@
 daos/ConnectionCSDL.java
  daos.ConnectionCSDL
+models/NhanVien.java
+ models.NhanVien
 controllers/NhanVienServlet.java
  controllers.NhanVienServlet
+controllers/DemoServlet.java
+ controllers.DemoServlet
+models/PhongBan.java
+ models.PhongBan
+daos/CRUDPhongBan.java
+ daos.CRUDPhongBan
+services/PhongBanService.java
+ services.PhongBanService
 services/NhanVienService.java
  services.NhanVienService
 daos/CRUDNhanVien.java
  daos.CRUDNhanVien
-models/PhongBan.java
- models.PhongBan
-models/NhanVien.java
- models.NhanVien

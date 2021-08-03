@@ -62,7 +62,7 @@ public class CRUDNhanVien {
     }
 
     public static void deleteNhanVien(int id) throws Exception {
-        String sqlDelete = "delete table nhanvien where id=?";
+        String sqlDelete = "delete from nhanvien where id=?";
         PreparedStatement preparedStatement = connection.prepareStatement(sqlDelete);
         preparedStatement.setInt(1, id);
         preparedStatement.execute();
